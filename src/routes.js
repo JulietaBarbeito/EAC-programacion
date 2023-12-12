@@ -1,5 +1,8 @@
 import { Router } from "express"; 
-import { helloworld } from "./controllers/hello-word-comtroller.js"
-const rouer = Router();
-Router.get("/", helloworld)
-export { Router}
+import { helloworld } from "./controllers/hello-world-controller.js"
+
+const router = Router();
+router.get("/jugadores", helloworld)
+
+
+export { router}
